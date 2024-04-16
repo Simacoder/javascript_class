@@ -1,34 +1,14 @@
-function count(username){
-    // you can call this function before declaration
-    console.log('Hi, ' + username);
-}
-// callng the funcion 
-count('Simanga ')
+listOfStudents = ["Simanga", "Sizwe", "Nthabiseng", "Gontse", "Nomcebo"]
+console.log({listOfStudents});
+console.log(listOfStudents.length);
 
-const countToo = function(username) {
-    // function expresion 
-    // cant call this function before declaration
-    console.log('Hi, there ' + username);
+listOfStudents.push("Tendo")
+console.log({listOfStudents})
 
-}
+listOfStudents.splice(0, 1)
+console.log({listOfStudents})
 
-countToo('Simanga');
-
-const countThree = ()=>  {
-    console.log('Hi, Sima');
-}
-
-countThree()
-
-const countfour = (a , b) => {
-    console.log(a * b);
-}
-
-countfour(2, 3)
-
-function addSum(a, b) {
-    return a + b
-}
-
-let sum = addSum(3,4)
-console.log("total: "+ sum);
+listOfStudents.forEach(item =>{
+    console.log(item);
+    
+});
