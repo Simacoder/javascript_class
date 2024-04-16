@@ -1,14 +1,11 @@
-listOfStudents = ["Simanga", "Sizwe", "Nthabiseng", "Gontse", "Nomcebo"]
-console.log({listOfStudents});
-console.log(listOfStudents.length);
+// working with objects 
 
-listOfStudents.push("Tendo")
-console.log({listOfStudents})
+let students = {
+    name: "Simanga",
+    surname: "Mchunu",
+    id_number: 9098211,
+    age: 45,
+    isStudent: true
+}
 
-listOfStudents.splice(0, 1)
-console.log({listOfStudents})
-
-listOfStudents.forEach(item =>{
-    console.log(item);
-    
-});
+console.log(students)
