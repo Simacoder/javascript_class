@@ -1,37 +1,42 @@
-// the way to declare variables 
-//var
-// let 
-// const: 
+// work with operators 
 
-//var username = "Simanga"
-//console.log(username);
+// =,-,/* , %
+// interger addition
+console.log(4 + 3);
+// string concatetinator
+console.log("Hi, there," + " my name is Simanga");
 
-//let age = 35
-//console.log({age});
+// explicitly 
+console.log(String(4) + String(5));
+console.log("5" + "9");
+// direct conversion 
+console.log(Number("5") + Number("9"));
 
-// data-types - primitive 
-let username = "Simanga"
-let age = 335
-let isStudent = true
-let surname = null
+// implicitly conversion
+console.log(6 + "6" + 6);
 
-console.log({username, age, isStudent, surname});
+let num1 = 100
+let num2 = 50
+let subtract = num1 - num2
+console.log(subtract);
 
-// non-primitve data-types
+// division 
+let quotien = num1 / num2
+console.log(quotien);
 
-let listOfstudent = ["Simanga", "Gontse", "Nomcebo","Thabang"]
-console.log({listOfstudent});
-console.log(listOfstudent.length);
+// multiplication 
 
-// objects non - primitive data-types
+console.log(num1 * num2);
 
-let students = {
-    name: "Simanga",
-    surname: "Mchunu",
-    id_number: 881120,
-    age: 35,
-    isStudent: true
+// logical operators
+
+// &&, ||, ==, !==, ===
+// if statements 
+
+if(5 >= 5){
+    console.log(true);
+}
+else {
+    console.log(false);
 }
 
-console.log(students);
-// 
