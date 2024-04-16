@@ -1,18 +1,34 @@
-// mixing logical and control flow 
+function count(username){
+    // you can call this function before declaration
+    console.log('Hi, ' + username);
+}
+// callng the funcion 
+count('Simanga ')
 
-let num1 = 4
-let num2 = 6
+const countToo = function(username) {
+    // function expresion 
+    // cant call this function before declaration
+    console.log('Hi, there ' + username);
 
-if (num1 > num2) {
-    console.log("The first number is high");
-}
-else {
-    console.log("Second number is high");
 }
 
-if ((num1 > num2) && ( 5 < 6)){
-    console.log("Both condition are true");
+countToo('Simanga');
+
+const countThree = ()=>  {
+    console.log('Hi, Sima');
 }
-else {
-    console.log("not both are met");
+
+countThree()
+
+const countfour = (a , b) => {
+    console.log(a * b);
 }
+
+countfour(2, 3)
+
+function addSum(a, b) {
+    return a + b
+}
+
+let sum = addSum(3,4)
+console.log("total: "+ sum);
